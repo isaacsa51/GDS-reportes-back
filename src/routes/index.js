@@ -4,6 +4,7 @@ const router = Router();
 const info = require("../controllers/index.controller");
 const users = require("../controllers/users.controller");
 const companies = require("../controllers/companies.controller");
+const comments = require("../controllers/comments.controller");
 
 // ** BASIC INFO FROM THE API **
 router.get("/", info.infoAPI);
@@ -33,5 +34,13 @@ router.put("/companies/:id", companies.updateInfo);
 router.put("/companies/:id", companies.changePassword);
 // DELETE a user by ID
 router.delete("/companies/:id", companies.delete);
+
+// ** COMMENTS **
+// GET all comments
+router.get("/comments", comments.getAll);
+// POST a new comment
+router.post("/comments", comments.create);
+// DELETE a comment via ID
+router.delete("/comments", comments.delete);
 
 module.exports = router;

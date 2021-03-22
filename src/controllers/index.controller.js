@@ -19,6 +19,11 @@ exports.infoAPI = (req, res) => {
                     <li>PUT para actualizar password</li>
                     <li>DELETE para eliminar una empresa</li>
                 </ul>
+            <li>/comments</li>
+            <li>/comments/[id_comentario]</li>
+                <ul>
+                    <li>DELETE para eliminar un usuario</li>
+                </ul>
         </ul>
     </div>`);
 };
