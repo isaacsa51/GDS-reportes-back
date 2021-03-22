@@ -21,7 +21,7 @@ const createUser = async (req, res) => {
 
 	try {
 		const response = await pool.query(
-			"INSERT INTO user (nombre, apellidos, email, telefono) VALUES ($1, $2, $3, $4)",
+			"INSERT INTO users (nombre, apellidos, email, telefono) VALUES ($1, $2, $3, $4)",
 			[nombre, apellidos, email, telefono]
 		);
 
