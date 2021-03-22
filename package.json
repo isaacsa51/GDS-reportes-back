@@ -1,28 +1,27 @@
 {
-  "name": "GDS-reportes-back",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/isaacsa51/GDS-reportes-back.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/isaacsa51/GDS-reportes-back/issues"
-  },
-  "homepage": "https://github.com/isaacsa51/GDS-reportes-back#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "uuid": "^8.3.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
+	"name": "GDS-reportes-back",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/isaacsa51/GDS-reportes-back.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/isaacsa51/GDS-reportes-back/issues"
+	},
+	"homepage": "https://github.com/isaacsa51/GDS-reportes-back#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"pg": "^8.5.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.7"
+	}
 }
