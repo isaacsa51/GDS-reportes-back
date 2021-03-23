@@ -24,6 +24,13 @@ exports.infoAPI = (req, res) => {
                 <ul>
                     <li>DELETE para eliminar un usuario</li>
                 </ul>
+            <li>/reports</li>
+            <li>/reports/[id_reporte]</li>
+                <ul>
+                    <li>GET para obtener un reporte por ID</li>
+                    <li>PUT para actualizar el status de un reporte por ID</li>
+                    <li>DELETE para eliminar un reporte por ID</li>
+                </ul>
         </ul>
     </div>`);
 };

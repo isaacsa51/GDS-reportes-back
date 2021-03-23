@@ -5,6 +5,7 @@ const info = require("../controllers/index.controller");
 const users = require("../controllers/users.controller");
 const companies = require("../controllers/companies.controller");
 const comments = require("../controllers/comments.controller");
+const reports = require("../controllers/reports.controller");
 
 // ** BASIC INFO FROM THE API **
 router.get("/", info.infoAPI);
@@ -34,6 +35,18 @@ router.put("/companies/:id", companies.updateInfo);
 router.put("/companies/:id", companies.changePassword);
 // DELETE a user by ID
 router.delete("/companies/:id", companies.delete);
+
+// ** REPORTS **
+// GET all reports
+router.get("/reports", reports.getAll);
+// GET report by ID
+router.get("/reports/:id", reports.getByID);
+// CREATE a new report
+router.post("/reports", reports.create);
+// UPDATE a status from a report by ID
+//router.put("/reports/:id", reports.update);
+// DELETE a report by ID
+router.delete("/reports/:id", reports.delete);
 
 // ** COMMENTS **
 // GET all comments
